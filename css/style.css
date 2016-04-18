@@ -21,19 +21,22 @@
         }
       }
 
-
-
     footer p {
       font-size: .9em;
       font-weight: normal;
     }
 
-    h1 {
+    h1, h2 {
       margin-top: 50px;
       font-family: 'Josefin Sans', sans-serif;
     }
 
+    h2 {
+      margin: 40px 0 40px 100px;
+    }
+
     hr {
+      margin-top: 100px;
       width: 70%;
     }
 
@@ -69,10 +72,33 @@
 
     .pstn-r {
       margin-top: 15px;
+      margin-right: 130px;
       float: right;
+    }
+    @media screen and (max-width: 400px) {
+      .pstn-r {
+        margin-top: 15px;
+        margin-right: 20px;
+        float: right;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .pstn-r {
+        margin-top: 15px;
+        margin-right: 10px;
+        float: right;
+      }
     }
 
     .pstn-l {
-      margin-top: 15px;
+      margin-top: -38px;
+      margin-left: 130px;
       float: left;
+    }
+    @media screen and (max-width: 320px) {
+      .pstn-r {
+        margin-top: 15px;
+        margin-right: 5px;
+        float: right;
+      }
     }
