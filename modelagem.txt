@@ -1,0 +1,5 @@
+r.db("test").table("food").insert({
+  path: "E:\Larissa\PROJETOS\eat\images\banana.jpg",
+  name: "Banana",
+  type: "Sweet"
+})
