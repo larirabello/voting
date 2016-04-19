@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+    body {
+      background-image: url("../images/aquarela.png");
+      background-repeat: no-repeat;
+      background-size: 300px;
+      background-attachment: local;
+      background-position: center top;
+    }
+
     button {
       font-family: 'Open Sans Condensed', sans-serif;
       font-size: 1.4em;
@@ -59,19 +67,19 @@
     @media screen and (max-width: 400px) {
       .size-img {
         height: 150px;
-        margin-top: 60px;
+        margin-top: 90px;
         width:150px;
       }
     }
 
     .subtitle {
-      color: rgb(218, 174, 207);
-      font-size: 1.4em;
+      color: rgb(82, 80, 80);
+      font-size: 1.5em;
       font-weight: normal;
     }
 
     .pstn-r {
-      margin-top: 15px;
+      margin-top: 25px;
       margin-right: 130px;
       float: right;
     }
@@ -95,10 +103,10 @@
       margin-left: 130px;
       float: left;
     }
-    @media screen and (max-width: 320px) {
-      .pstn-r {
-        margin-top: 15px;
-        margin-right: 5px;
+    @media screen and (max-width: 400px) {
+      .pstn-l {
+        margin-top: -40px;
+        margin-right: 195px;
         float: right;
       }
     }
