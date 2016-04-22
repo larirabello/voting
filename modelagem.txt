@@ -3,3 +3,9 @@ r.db("test").table("food").insert({
   name: "Banana",
   type: "Sweet"
 })
+
+
+r.db("test").table("food").get('bb19d1c9-aeaa-480c-84b3-30efeef157b7').update({path: 'images/donuts.jpg', name: 'Donuts'})
+  
+  
+  r.db("test").table("food").sample(2)
