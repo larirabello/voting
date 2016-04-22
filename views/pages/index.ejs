@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>What to Eat?</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/fork.png" type="image/png" />
+  <link rel="shortcut icon" href="public/images/fork.png" type="image/png" />
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="public/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container">
@@ -26,20 +26,20 @@
     <article>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <img class="img-responsive pull-right size-img" src="images/hotdog.jpg"/>
+          <img class="img-responsive pull-right size-img" src="public/<%= foodlist[1].path%>"/>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <img class="img-responsive pull-left size-img" src="images/hotdog.jpg"/>
+          <img class="img-responsive pull-left size-img" src="public/<%= foodlist[0].path%>"/>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 text-center pstn-r">
-          <button class="">Hot Dog!</button>
+          <button class=""><%= foodlist[0].name%></button>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 text-center pstn-l">
-          <button>Hot Dog!</button>
+          <button><%= foodlist[1].name%></button>
         </div>
       </div>
     </article>
@@ -49,10 +49,10 @@
         <section>
           <h2>Favorites</h2>
           <ul class="list-inline text-center">
-            <li><img class="img-responsive" src="images/hotdog.jpg"/></li>
-            <li><img class="img-responsive" src="images/hotdog.jpg"/></li>
-            <li><img class="img-responsive" src="images/hotdog.jpg"/></li>
-            <li><img class="img-responsive" src="images/hotdog.jpg"/></li>
+            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
+            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
+            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
+            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
           </ul>
         </section>
       </div>
