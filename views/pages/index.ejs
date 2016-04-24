@@ -34,12 +34,18 @@
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 text-center pstn-r">
-          <button class=""><%= foodlist[0].name%></button>
+          <form action="/vote" method="post">
+            <input type="hidden" name="id" value="<%= foodlist[0].id%>"/>
+            <button type="submit"><%= foodlist[0].name%></button>
+          </form>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 text-center pstn-l">
-          <button><%= foodlist[1].name%></button>
+          <form action="/vote" method="post">
+            <input type="hidden" name="id" value="<%= foodlist[1].id%>"/>
+            <button><%= foodlist[1].name%></button>
+          </form>
         </div>
       </div>
     </article>
