@@ -15,10 +15,16 @@ app.get("/", function(req, res) {
   r.connect({host:"localhost", port: 28015}, function(err, conn) {
      r.db("test").table("food").sample(2).run(conn, function(error, cursor) {
        cursor.toArray(function(error, results) {
-           if (conn != null) conn.close();
-           res.render('pages/index', {
-             foodlist: results,
+           //if (conn != null) conn.close();
+           r.db("test").table("food").orderBy(r.desc("votes")).limit(4).run(conn, function(er, c) {
+             c.toArray(function(s, resp) {
+               res.render('pages/index', {
+                 foodlist: results,
+                 topN: resp
+               });
+             });
            });
+
        });
      });
   });

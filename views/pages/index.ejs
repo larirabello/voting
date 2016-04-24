@@ -55,10 +55,12 @@
         <section>
           <h2>Favorites</h2>
           <ul class="list-inline text-center">
-            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
-            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
-            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
-            <li><img class="img-responsive" src="public/images/hotdog.jpg"/></li>
+            <% topN.forEach(function(value) {%>
+              <li>
+                <img class="img-responsive sizes" src="public/<%= value.path%>"/>
+                <p><%= value.votes%></p>
+              </li>
+            <% }); %>
           </ul>
         </section>
       </div>

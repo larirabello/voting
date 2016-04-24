@@ -58,6 +58,10 @@
       font-size: 2.1em;
     }
 
+    .sizes {
+      height: 220px;
+      width: 220px;
+    }
 
     .size-img {
       height: 300px;
